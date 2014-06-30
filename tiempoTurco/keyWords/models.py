@@ -1,8 +1,11 @@
 from django.db import models
 
-from news.models import News
+from news.models import New
 
 # Create your models here.
-class KeyWords(models.Model):
+class KeyWord(models.Model):
     name = models.CharField(max_length=50)
-    news = models.ManyToManyField(News)
+    news = models.ManyToManyField(New)
+
+    def __str__(self):
+        return self.name

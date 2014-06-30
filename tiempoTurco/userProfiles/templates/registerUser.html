@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <section>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form.as_p}} <!-- devuelve cada campo dentro de un <p>-->
+            <button type="submit" value="Submit">Registrar</button>
+        </form>
+    </section>
+</body>
+</html>

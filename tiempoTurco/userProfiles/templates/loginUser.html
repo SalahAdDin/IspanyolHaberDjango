@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingreso de Usuario</title>
+</head>
+<body>
+    <section>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Ingresar</button>
+        </form>
+    </section>
+</body>
+</html>

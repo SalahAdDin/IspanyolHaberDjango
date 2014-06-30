@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'o5+(*-5bus0e%28%j#%2-5*u3$dj508d01l*&z!1cjt%ca6=y@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #Cuando pase a produccion hay que ponerlo como FALSE
 
 TEMPLATE_DEBUG = True
 
@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'author',
+    'django_extensions',
+    'authors',
     'comments',
     'gallery',
     'images',
@@ -46,7 +47,7 @@ INSTALLED_APPS = (
     'publisher',
     'subtopic',
     'topic',
-    'user',
+    'userProfiles',
     'videos',
 )
 
@@ -83,7 +84,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'    #Por defecto es 'UTC'
 
 USE_I18N = True
 
@@ -96,3 +97,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.sep.join(
+    os.path.abspath(__file__).split(os.sep)[:-2] + ['media']
+)
+MEDIA_URL = '/media/'
+#Backends
+#AUTHENTICATION_BACKENDS = (
+#    'userProfiles.backends.EmailBackend',
+#)

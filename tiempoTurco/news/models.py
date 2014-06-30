@@ -1,21 +1,28 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
-
-from author.models import Author
+from authors.models import Author
 from subtopic.models import Subtopic
 from topic.models import Topic
 
 # Create your models here.
 
-class News(models.Model):
+class New(models.Model):
     title = models.CharField(max_length=255)
     topic = models.ForeignKey(Topic)
     subtopic = models.ForeignKey(Subtopic)
     author = models.ForeignKey(Author)
-    #linkAuthor = models.URLField() Como traerlo desde el propio autor?
+    #el enlace del autor se pasa en la vista de la noticia como new.author.link_own
+    #image = models.como poner la imagen?
     dateTime = models.DateTimeField(auto_now_add=True)
     place = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='images/news')
     content = models.TextField()
-    source = models.URLField()
+    source = models.URLField(blank=True)
     slug =  models.SlugField()
+
+    def __str__(self):
+        return self.title
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.nombre)
+        super(New, self).save(*args, **kwargs)
