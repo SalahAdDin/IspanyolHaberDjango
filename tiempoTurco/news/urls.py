@@ -14,5 +14,5 @@ urlpatterns = patterns('',
 
     #Lo ideal es que cada mòdulo tenga su propio archivo de direcciones url las cuàles solo afecten el mòdulo
 
-    url(r'^(?P<first_name>[\w\-]+)/', 'authors.views.Author_view', name='Author.view'),
+    #url(r'^authors/(?P<first_name>[\w\-]+)/', 'authors.views.Author_view', name='Author.view'),
 )
