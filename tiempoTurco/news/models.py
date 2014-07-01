@@ -4,6 +4,7 @@ from django.template.defaultfilters import slugify
 from authors.models import Author
 from subtopic.models import Subtopic
 from topic.models import Topic
+from keyWords.models import KeyWord
 
 # Create your models here.
 
@@ -14,6 +15,7 @@ class New(models.Model):
     author = models.ForeignKey(Author)
     #el enlace del autor se pasa en la vista de la noticia como new.author.link_own
     #image = models.como poner la imagen?
+    keyword = models.ManyToManyField(KeyWord, blank=True)
     dateTime = models.DateTimeField(auto_now_add=True)
     place = models.CharField(max_length=255)
     content = models.TextField()

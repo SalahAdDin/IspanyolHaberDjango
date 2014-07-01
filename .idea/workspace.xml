@@ -41,21 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/authors/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/news/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="423" selection-end="423" vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="580">
+            <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="580">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -66,7 +55,16 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/keyWords/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="35" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -170,9 +168,9 @@
         <option value="$PROJECT_DIR$/tiempoTurco/authors/urls.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/userProfiles/urls.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/news/models.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/keyWords/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/keyWords/models.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/news/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/admin.py" />
       </list>
     </option>
@@ -725,7 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,7 +732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="51" selection-start="476" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
           <folding>
-            <marker date="1404172724399" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -755,7 +753,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,16 +1013,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="55" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding>
-            <marker date="1404172724399" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1052,7 +1041,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/keyWords/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1061,7 +1057,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="423" selection-end="423" vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="580">
+        <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="580">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
