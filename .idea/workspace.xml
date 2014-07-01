@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/news/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="580">
+            <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -61,21 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/news/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="5" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="50" selection-start="943" selection-end="943" vertical-scroll-proportion="0.35413152" vertical-offset="270" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -167,11 +165,11 @@
         <option value="$PROJECT_DIR$/tiempoTurco/news/urls.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/authors/urls.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/userProfiles/urls.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/keyWords/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/admin.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py" />
       </list>
     </option>
   </component>
@@ -722,9 +720,7 @@
     <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -752,9 +748,7 @@
     <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +923,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="31" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1009,25 +1003,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="55" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/userProfiles/templates/registerUser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="58" selection-start="332" selection-end="332" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="22" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1695">
           <folding />
         </state>
       </provider>
@@ -1057,10 +1035,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="580">
+        <state line="12" column="32" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="362" selection-end="362" vertical-scroll-proportion="0.05172414" vertical-offset="90" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="50" selection-start="943" selection-end="943" vertical-scroll-proportion="0.35413152" vertical-offset="270" max-vertical-offset="1785">
+          <folding />
         </state>
       </provider>
     </entry>
