@@ -26,23 +26,32 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#TCP definition
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+    'django.core.context_processors.request',
+    'tiempoTurco.context_processors.basic',
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
+)
+
+#Grappelli customisation
+GRAPPELLI_ADMIN_TITLE = 'Tiempo Turco'
 
 # Application definition
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.request',
-)
 
 INSTALLED_APPS = (
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
+    #'django.contrib.comments', Despreciado en proximas versiones
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'social.apps.django_app.default',
     'authors',
     'comments',
     'gallery',
@@ -108,7 +117,11 @@ MEDIA_ROOT = os.sep.join(
     os.path.abspath(__file__).split(os.sep)[:-2] + ['media']
 )
 MEDIA_URL = '/media/'
+
 #Backends
 #AUTHENTICATION_BACKENDS = (
+#    'django.contrib.auth.backends.ModelBackend',
+#    'social.backends.google.GoogleOAuth2',
+#    'social.backends.facebook.FacebookOAuth2'
 #    'userProfiles.backends.EmailBackend',
 #)

@@ -3,15 +3,20 @@ from django.contrib import admin
 from .models import New
 from actions import export_as_excel
 from images.models import Image
+from videos.models import Video
 
 # Register your models here.
 
 class ImageInLine(admin.StackedInline):
     model = Image
 
+class VideoInLine(admin.StackedInline):
+    model = Video
+
+
 class NewAdmin(admin.ModelAdmin):
     actions = (export_as_excel,)
-    inlines = [ImageInLine, ]
+    inlines = [ImageInLine, VideoInLine, ]
     filter_horizontal = ('keyword',)
     list_display = ('author', 'title', 'topic', 'subtopic','dateTime')
     list_filter = ('author', 'title', 'topic', 'subtopic','dateTime')
