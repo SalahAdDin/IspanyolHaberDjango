@@ -10,9 +10,13 @@ class Author(models.Model):
     link_own = models.URLField(verbose_name='Enlace Propio', blank=True)
     news_own = models.PositiveIntegerField(verbose_name='Noticias', blank=True,default='0') #Contador de publicaciones que ha tenido, entre Articulos, COlumnas, Galerias, pueden ser propias o referidas
 
-    def __str__(self):
-        return '%s %s' % (self.first_name,self.last_name)
-
     class Meta:
         ordering=['-last_name']
         verbose_name_plural='Autores'
+
+    def __str__(self):
+        return '%s %s' % (self.first_name,self.last_name)
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('authors.views.Author_view', None, {'first_name': self.first_name})

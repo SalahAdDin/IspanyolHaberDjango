@@ -18,10 +18,12 @@ class NewAdmin(admin.ModelAdmin):
     actions = (export_as_excel,)
     inlines = [ImageInLine, VideoInLine, ]
     filter_horizontal = ('keyword',)
-    list_display = ('author', 'title', 'topic', 'subtopic','dateTime')
+    list_display = ('author', 'title', 'topic', 'subtopic','dateTime',)
     list_filter = ('author', 'title', 'topic', 'subtopic','dateTime')
     list_editable = ('title', 'topic', 'subtopic')
     prepopulated_fields = {"slug": ("title",)}
+    raw_id_fields = ('author', )
     search_fields = ('author__first_name','author__last_name', 'title', 'topic', 'subtopic','dateTime') #si quiero buscar noticias por el apellido de su author 'author__last_name'
+
 
 admin.site.register(New, NewAdmin)

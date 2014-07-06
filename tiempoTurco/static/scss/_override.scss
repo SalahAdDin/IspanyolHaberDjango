@@ -1,0 +1,27 @@
+//Sobreescribir estilos por defecto de Foundation
+
+@import "foundation/functions";
+
+.row{
+  margin: 0px;  /*Quitamos el margen de Row para el ancho de la pagina completamente*/
+  max-width: 100%;
+}
+
+dl{
+  line-height: 0;
+}
+
+h2{
+  font-size: 1.125em;
+  font-variant: small-caps;
+  font-family: 'sawasdee','ubuntu';
+  font-weight: bold;
+}
+h3{
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 0.9375em;
+  line-height: 1.1;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+}

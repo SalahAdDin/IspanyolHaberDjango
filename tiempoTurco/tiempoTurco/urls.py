@@ -11,6 +11,12 @@ urlpatterns = patterns('',
     url(r'^grappelli/', include('grappelli.urls')), # Grappelli URLS
     url(r'^admin/', include(admin.site.urls)),
 
+    #Reiniciar la contrasena en caso de perdida
+    url(r'^admin/password_reset/$', 'django.contrib.auth.views.password_reset', name='admin_password_reset'),
+    url(r'^admin/password_reset/done/$', 'django.contrib.auth.views.password_reset_done', name='admin_password_reset_done'),
+    url(r'^admin/password_reset/(?P<uidb36>[0-9A-Za-z]+)-(?P<token>.+)/$', 'django.contrib.auth.views.password_reset_confirm', name='admin_password_reset_confirm'),
+    url(r'^admin/password_done/$', 'django.contrib.auth.views.password_reset_complete', name='admin_password_reset_complete'),
+
     #Lo ideal es que cada mòdulo tenga su propio archivo de direcciones url las cuàles solo afecten el mòdulo
     #Here own urls for module
     url(r'^authors/', include('authors.urls')), #Authors Urls
@@ -36,8 +42,8 @@ if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, i
             {'document_root': settings.MEDIA_ROOT, }
         ),
         url(
-            r'^media/(?P<path>.*)$',
+            r'^static/(?P<path>.*)$',
             'django.views.static.serve',
-            {'document_root': settings.MEDIA_ROOT}
+            {'document_root': settings.STATIC_ROOT}
         ),
     )

@@ -22,6 +22,10 @@ class New(models.Model):
     source = models.URLField(verbose_name='Fuente', blank=True)
     slug =  models.SlugField(verbose_name='Slug', max_length=100, unique=True)
 
+    class Meta:
+        ordering=['-dateTime']
+        verbose_name_plural='Noticias'
+
     def __str__(self):
         return self.title
 
@@ -31,10 +35,17 @@ class New(models.Model):
             self.slug = slugify(self.title)
         super(New, self).save()
 
+    @models.permalink
     def get_absolute_url(self):
-        return '/news/%s/' % self.slug
+        return ('news.views.New_view', None, {'slug': self.slug})
 
-    class Meta:
-        ordering=['-dateTime']
-        verbose_name_plural='Noticias'
-    
+
+from django.core.cache import cache
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
+from django.contrib.sessions.models import Session
+@receiver(post_save)
+def clear_cache(sender, **kwargs):
+    if sender != Session:
+        cache.clear()

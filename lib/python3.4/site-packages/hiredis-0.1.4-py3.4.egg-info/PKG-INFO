@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: hiredis
+Version: 0.1.4
+Summary: Python wrapper for hiredis
+Home-page: https://github.com/pietern/hiredis-py
+Author: Pieter Noordhuis
+Author-email: pcnoordhuis@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: Redis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
