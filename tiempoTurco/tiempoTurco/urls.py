@@ -31,6 +31,9 @@ urlpatterns = patterns('',
     #url(r'^authors/(?P<first_name>[\w\-]+)/', 'authors.views.Author_view', name='Author.view'),
     #url(r'^registerUser/', 'userProfiles.views.signUp',name='signUp'),
     #url(r'^loginUser/', 'userProfiles.views.loginUser',name='logIn'),
+
+    #Pagina principal
+    #url(r'^$', 'signups.views.home', name='home'),
 )
 
 if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, ideal que en produccion otro server los maneje, no entiendo esto

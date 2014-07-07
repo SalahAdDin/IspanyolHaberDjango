@@ -65,7 +65,7 @@ INSTALLED_APPS = (
     'userProfiles',
     'videos',
     'rest_framework',
-    'gunicorn',
+    #'gunicorn',
     'sorl.thumbnail',
 )
 
@@ -119,15 +119,40 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-
-MEDIA_ROOT = os.sep.join(
-    os.path.abspath(__file__).split(os.sep)[:-2] + ['media']
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
-MEDIA_URL = '/media/'
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+if DEBUG:
+    #MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "media")
+    MEDIA_ROOT = os.sep.join(
+        os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/media']
+    )
+    #STATIC_ROOT = os.sep.join(
+    #    os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static_only']
+    #)
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics",  "static_only")
+    #STATICFILES_DIRS = (
+    #    os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static']
+    #)
+    STATICFILES_DIRS = (
+        os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "static"),
+    )
+    MEDIA_URL = '/media/'
+
+    #MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "udemy", "static", "media")
+
+
+TEMPLATE_DIRS = (
+    #os.path.abspath(__file__).split(os.sep)[:-2] + ['static/templates']
+    os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "templates"),
+)
+
+#SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 #STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
 #Backends
 #AUTHENTICATION_BACKENDS = (
 #    'django.contrib.auth.backends.ModelBackend',
