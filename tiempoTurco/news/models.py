@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.core.urlresolvers import reverse
 
 from authors.models import Author
 from subtopic.models import Subtopic
@@ -35,9 +36,15 @@ class New(models.Model):
             self.slug = slugify(self.title)
         super(New, self).save()
 
-    @models.permalink
+    #@models.permalink
+    #def get_absolute_url(self):
+    #    return ('news.views.New_view', None, {'year': self.dateTime.year,
+    #    'month': self.dateTime.strftime('%m'),
+    #    'day': self.dateTime.strftime('%d'),
+    #    'slug': self.slug})
+
     def get_absolute_url(self):
-        return ('news.views.New_view', None, {'slug': self.slug})
+        return reverse ('NewsDefaultView', args = [str(self.dateTime.strftime("%Y")), str(self.dateTime.strftime("%b")), str(self.dateTime.strftime("%d")), str(self.slug)])
 
 
 from django.core.cache import cache

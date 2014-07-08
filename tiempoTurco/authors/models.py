@@ -8,7 +8,7 @@ class Author(models.Model):
     biography = models.TextField(verbose_name='Biografía', blank=True)
     age = models.PositiveIntegerField(verbose_name='Edad')
     link_own = models.URLField(verbose_name='Enlace Propio', blank=True)
-    news_own = models.PositiveIntegerField(verbose_name='Noticias', blank=True,default='0') #Contador de publicaciones que ha tenido, entre Articulos, COlumnas, Galerias, pueden ser propias o referidas
+    news_own = models.PositiveIntegerField(verbose_name='Noticias', blank=True, default='0') #Contador de publicaciones que ha tenido, entre Articulos, COlumnas, Galerias, pueden ser propias o referidas
 
     class Meta:
         ordering=['-last_name']
