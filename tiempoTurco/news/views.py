@@ -1,10 +1,36 @@
 import json
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse,Http404
+from django.http import HttpResponse,Http404, HttpResponseRedirect
+from django.views.generic import DetailView, ListView
 
 from .models import New
 
 # Create your views here.
+
+class NewsDefaultView(DetailView):
+    template_name = 'news_template.html'
+    queryset = New.objects.all()
+    context_object_name = 'news'
+    slug_field = 'slug'
+
+    #def get_queryset(self):
+
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        context = self.get_context_data(object=self.object)
+        return self.render_to_response(context)
+
+class NewsIndexView(ListView):
+    template_name = 'index.html'
+    paginate_by = 10
+
+    def get_paginate_by(self, queryset):
+        return self.request.GET.get('paginate_by',  self.paginate_by)
+
+    def get_queryset(self):
+        return New.objects.filter()
+
 def New_view(request, slug):
     new = get_object_or_404(New, slug=slug)
 
