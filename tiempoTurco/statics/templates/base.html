@@ -81,7 +81,7 @@
                 <li class="noborder"><a class="gn-icon nopadding gn-icon-twitter"></a></li>
                 <li class="noborder"><a class="gn-icon nopadding gn-icon-feed"></a></li>
                 <li><a class="gn-icon nopadding gn-icon-youtube"></a></li>                    
-                <li><a href=""><span>Fecha</span></a></li>                
+                <li><a href=""><span>{% now "SHORT_DATE_FORMAT" %}</span></a></li>
             </ul>
         </header>
         <!--Contenido-->
@@ -117,7 +117,7 @@
                 &copy; 2014. Todos los derechos reservados.
             </div>
             <div class="large-6 columns text-right">
-                Desarrollado por SalahAdDin(Jose Luis Sandoval Alaguna) con<a class="gn-icon gn-icon-html5">Html5</a>
+                Desarrollado por {{ meta_author }} con<a class="gn-icon gn-icon-html5">Html5</a>
             </div>
         </footer>
         <!-- Mensaje de Bienvenida Primera visita (Original class"tooltip") Arreglar

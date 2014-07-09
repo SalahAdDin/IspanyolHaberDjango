@@ -14,6 +14,7 @@ class NewsDefaultView(DateDetailView):
     context_object_name = 'news'
     date_field = 'dateTime'
     model = New
+    print (New.author)
 
 
 

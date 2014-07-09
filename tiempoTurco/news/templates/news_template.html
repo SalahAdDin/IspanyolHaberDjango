@@ -12,9 +12,9 @@
             <h1 class="text-justify">{{ news.title }}</h1>
             <div class="row">
                 <div class="large-9 columns">
-                    <time datetime="{{ news.dateTime }}">{{ news.dateTime|date:'h:i a, l j \d\e F \d\e Y' }}</time>
+                    <time datetime="{{ news.dateTime|date:'Y-m-d H:i:s' }}">{{ news.dateTime|date:'h:i a, l j \d\e F \d\e Y' }}</time>
                     <h3 class="divider-right">{{ news.place }}</h3>
-                    <h2><a href="">{{ news.author}} </a></h2>
+                    <h2><a href="">{{ news.author.first_name }} {{ news.author.last_name }}</a></h2>
                     <h3><a href="">{{ news.author.link_own }}</a></h3>
                 </div>
                 <div class="large-3 columns social-media">
@@ -36,54 +36,8 @@
             <aside>
                 <h2>Recomendados</h2>
             </aside>
-            <p>
-                Un Tribunal egipcio juzgó a 528 miembros de la Hermandad Musulmana,
-                de los cuales el derrocado Presidente Mohammed Morsi ha sido una figura destacada,
-                el 24 de marzo y los condenó a pena muerte por el asesinato de un policía y un lesiones personales
-                a demás miembros de la población civil en uno de los juicios en masa más grandes en el país en décadas,
-                han informado las agencias de noticias.
-            </p>
-            <p>
-                La decisión, que llegó después de un juicio de dos sesiones, ha provocado críticas de grupos de derechos humanos y
-                gobiernos alrededor del mundo.
-            </p>
-            <p>
-                La carta de Görmez a Ahmed el-Tayeb, el gran jeque de al-Azhar, dice: "somos parte de la Umma islámica.
-                Estamos contentos cuando los musulmanes están felices y tristes juntos si los musulmanes están tristes.
-                Nosotros y nuestra gente estamos profundamente entristecidos por la decisión del Tribunal tomada el 24 de Marzo en
-                Egipto al sentenciar a estas 528 personas."
-            </p>
-            <p>
-                "Nos gustaría expresar nuestra esperanza con los eruditos de la Universidad al-Azhar de restablecer la unidad,
-                solidaridad y hermandad entre egipcios y perseguir su deber con justicia y compasión. Estamos seguros de que harán
-                los esfuerzos necesarios para consolidar la hermandad y justicia entre el pueblo Egipcio, seguros de que  se dan cuenta de esto”, dice la carta.
-            </p>
-            <p>
-                "Todo el mundo es testigo de que lo que se desarrolló en Egipto es un disturbio político. Hoy en día,
-                la tarea más importante es prevenir la muerte posterior de musulmanes y egipcios", añadió la carta.
-            </p>
-            <p>
-                "Por esta razón, para rescatar el honor de nuestros hermanos egipcios, el deber recae sobre los hombros
-                de los eruditos de la Universidad al-Azhar, para asegurar el levantamiento de esta decisión tan brutal", dice la carta.
-            </p>
-            <p>
-                Los partidos políticos en el Parlamento turco recientemente redactaron una declaración conjunta contra la
-                decisión de la corte egipcia.
-            </p>
-            <p>
-                El año pasado, el primer ministro Recep Tayyip Erdoğan rechazo al gran jeque de al-Azhar de respaldar el golpe
-                militar que quitó a Mursi del poder, diciendo que la "historia maldecirá" eruditos como él.
-            </p>
-            <p>
-                El jeque había respaldado un plan patrocinado por el ejército, el cuál suspendió la Constitución
-                y pidió adelantar las elecciones presidenciales y parlamentarias.
-            </p>
-            <p>
-                Erdogan dijo que quedó devastado cuando vio el jeque de al-Azhar avalando a los militares en Egipto.
-                "Cómo?" preguntó. "Ese erudito está acabado. La Historia maldecirá a hombres como él como la historia
-                ha maldecido a académicos similares en Turquía antes."
-            </p>
-            <p>[<a href="">Fuente</a>] <span class="gn-icon-other gn-icon-checkbox-partial"></span></p>
+            {{ news.content|linebreaksp }}
+            <p>[<a href="{{ news.source }}">{{ news.source }}</a>] <span class="gn-icon-other gn-icon-checkbox-partial"></span></p>
         </section>
         <footer  class="row">
             <div class="large-6 columns">
