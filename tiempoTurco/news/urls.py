@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     #Lo ideal es que cada mòdulo tenga su propio archivo de direcciones url las cuàles solo afecten el mòdulo
 
     #url(r'^(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]{2})/(?P<slug>[\w\-]+)/', 'news.views.New_view', name='New.view'),
-    url(r'^(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[\w\-]+)/', NewsDefaultView.as_view(), name='NewsDefaultView'),
+    url(r'^(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[\w\-]+)/$', NewsDefaultView.as_view(), name='NewsDefaultView'),
 
 
 )
