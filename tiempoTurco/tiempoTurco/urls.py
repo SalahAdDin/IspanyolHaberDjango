@@ -47,6 +47,6 @@ if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, i
         url(
             r'^static/(?P<path>.*)$',
             'django.views.static.serve',
-            {'document_root': settings.STATIC_ROOT}
+            {'document_root': settings.STATIC_ROOT, }
         ),
     )

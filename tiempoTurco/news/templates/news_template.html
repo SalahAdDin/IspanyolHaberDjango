@@ -1,5 +1,5 @@
 {% extends 'base.html'%}
-{% load staticfiles %}
+{% load static from staticfiles %}
 {% block titlepage %} {{ news.title }} {% endblock %}
 {% block leftcontent %}{% endblock %}
 {% block newscontent %}
@@ -15,7 +15,7 @@
                     <time datetime="{{ news.dateTime|date:'Y-m-d H:i:s' }}">{{ news.dateTime|date:'h:i a, l j \d\e F \d\e Y' }}</time>
                     <h3 class="divider-right">{{ news.place }}</h3>
                     <h2><a href="">{{ news.author.first_name }} {{ news.author.last_name }}</a></h2>
-                    <h3><a href="">{{ news.author.link_own }}</a></h3>
+                    <h3>{{ news.author.link_own|urlize }}</h3>
                 </div>
                 <div class="large-3 columns social-media">
                     <a class="gn-icon-other gn-icon-twitter"></a>
@@ -36,8 +36,16 @@
             <aside>
                 <h2>Recomendados</h2>
             </aside>
-            {{ news.content|linebreaksp }}
-            <p>[<a href="{{ news.source }}">{{ news.source }}</a>] <span class="gn-icon-other gn-icon-checkbox-partial"></span></p>
+            {{ news.content|linebreaks }}
+            <p> {% if news.keyword.all %}
+                    {% for keyword in news.keyword.all %}
+                        <a href="">{{ keyword.name }}   </a>,
+                    {% endfor %}
+                {% else %}
+                    <a href="">Tiempo Turco</a>
+                {% endif %}
+            </p>
+            <p>[{{ news.source|urlize }}] <span class="gn-icon-other gn-icon-checkbox-partial"></span></p>
         </section>
         <footer  class="row">
             <div class="large-6 columns">

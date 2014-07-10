@@ -20,11 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'o5+(*-5bus0e%28%j#%2-5*u3$dj508d01l*&z!1cjt%ca6=y@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True #Cuando pase a produccion hay que ponerlo como FALSE
+DEBUG = False #Cuando pase a produccion hay que ponerlo como FALSE
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost',]
 
 #TCP definition
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
@@ -70,14 +70,14 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.cache.UpdateCacheMiddleware',
+    #'django.middleware.cache.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
+    #'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
 CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
@@ -119,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -132,7 +133,7 @@ if DEBUG:
     #STATIC_ROOT = os.sep.join(
     #    os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static_only']
     #)
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics",  "static_only")
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics",  "static_only", )
     #STATICFILES_DIRS = (
     #    os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static']
     #)
@@ -151,7 +152,7 @@ TEMPLATE_DIRS = (
 
 #SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
-#STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 
 #Backends
 #AUTHENTICATION_BACKENDS = (
