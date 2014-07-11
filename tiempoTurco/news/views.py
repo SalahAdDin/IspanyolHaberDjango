@@ -6,6 +6,8 @@ from django.http import HttpResponse,Http404, HttpResponseRedirect
 from django.views.generic import DetailView, ListView, DateDetailView
 
 from .models import New
+from images.models import Image
+#from .forms import ImageFormSet,GalleryFormSet, NewsInlineForm
 
 # Create your views here.
 
@@ -15,9 +17,10 @@ class NewsDefaultView(DateDetailView):
     date_field = 'dateTime'
     model = New
 
-
-
-
+    def get_context_data(self, **kwargs):
+        context = super(NewsDefaultView, self).get_context_data(**kwargs)
+        context['newsimages'] = Image.objects.all()
+        return context
 
 
 class NewsIndexView(ListView):

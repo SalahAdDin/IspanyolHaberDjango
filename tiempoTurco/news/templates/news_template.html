@@ -27,8 +27,12 @@
         </header>
         <section class="row">
             <figure>
-                <img src="images/news/2014/2014041101.jpg" alt="Presiente-Direccion-Asuntos-Religiosos"/>
-                <figcaption>Mehmet Görmez | Presidente de la Direccion de Asuntos Religiosos</figcaption>
+                {% if news.newsimages.all %}
+                    {% for image in newsimages.all %}
+                        <img src="{{ news.newsimages.image }}" alt="{{ news.newsimages.name }}"/>
+                        <figcaption>{{ news.newsimages.caption }}</figcaption>
+                    {% endfor%}
+                {% endif %}
             </figure>
             <h2 class="review text-justify">El Presidente de la Dirección de Asuntos Religiosos de Turquía,  Mehmet Görmez,
                 ha enviado una carta al clérigo islámico líder del país Egipcio, en la cual exigió la revocación de la decisión

@@ -36,9 +36,9 @@ urlpatterns = patterns('',
     #url(r'^$', 'signups.views.home', name='home'),
 )
 
-if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, ideal que en produccion otro server los maneje, no entiendo esto
-    urlpatterns += patterns(
-        '',
-        url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root': settings.MEDIA_ROOT, }),
-        url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root': settings.STATIC_ROOT, }),
-    )
+#if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, ideal que en produccion otro server los maneje, no entiendo esto
+urlpatterns += patterns(
+    '',
+    url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root': settings.MEDIA_ROOT, }),
+    url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root': settings.STATIC_ROOT, }),
+)
