@@ -136,9 +136,6 @@ STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "stat
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 
-    #MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "udemy", "static", "media")
-
-
 TEMPLATE_DIRS = (
     #os.path.abspath(__file__).split(os.sep)[:-2] + ['static/templates']
     os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "templates"),
