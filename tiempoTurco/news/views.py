@@ -31,7 +31,7 @@ class NewsIndexView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(NewsIndexView, self).get_context_data(**kwargs)
-        context['newsimages'] = Image.objects.filter(news__pk=self.object.id)
+        context['newsimages'] = Image.objects.filter(news__pk=self.objects.id)
         return context
 
 class NewsViewsOther(ListView): #Otras vistas que si necesiten paginacion, apoyarse en el video del Brasileno, ahi esta como hacer paginacion bien hecha

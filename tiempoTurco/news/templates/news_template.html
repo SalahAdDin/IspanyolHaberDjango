@@ -1,5 +1,6 @@
 {% extends 'base.html'%}
 {% load static from staticfiles %}
+{% load news %}
 {% block titlepage %} {{ news.title }} {% endblock %}
 {% block slidermenu%}
     <li class="news-slider">
@@ -75,13 +76,11 @@
                     {% endfor%}
                 {% endif %}
             </figure>
-            <h2 class="review text-justify">El Presidente de la Dirección de Asuntos Religiosos de Turquía,  Mehmet Görmez,
-                ha enviado una carta al clérigo islámico líder del país Egipcio, en la cual exigió la revocación de la decisión
-                de un Tribunal egipcio que sentencia a cientos de miembros de la hermandad musulmana a la pena de muerte.</h2>
+            <h2 class="review text-justify">{{ news.content|search:'^.*' }}</h2>
             <aside>
                 <h2>Recomendados</h2>
             </aside>
-            {{ news.content|linebreaks }}
+            {{ news.content|sub:'^.*\n+'|linebreaks }}
             <p> {% if news.keyword.all %}
                     {% for keyword in news.keyword.all %}
                         <a href="">{{ keyword.name }}   </a>,
