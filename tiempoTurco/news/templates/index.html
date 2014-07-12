@@ -1,5 +1,6 @@
 {% extends 'base.html'%}
 {% load static from staticfiles %}
+{% load thumbnail %}
 {% block titlepage %} {{ title_page }} {% endblock %}
 {% block slidermenu%}
         <li class="noborder"><a class="gn-icon nopadding gn-icon-googleplus"></a>
@@ -82,10 +83,14 @@
                         <div class="row">
                             <article class="large-6 columns">
                                 <figure>
-                                    <a href=""><img src=""/></a>
+                                    <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
+                                        {% thumbnail {{ newsimages.all|slice:":1" }} geometry as im %}
+                                            <img src="{{ im.url }}">
+                                        {% endthumbnail %}
+                                    </a>
                                     <figcaption>
                                         <h2>{{ new.title }}</h2>
-                                        <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' year month day slug%}">Leer mas...</a></p>
+                                        <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">Leer mas...</a></p>
                                     </figcaption>
                                 </figure>
                             </article>
