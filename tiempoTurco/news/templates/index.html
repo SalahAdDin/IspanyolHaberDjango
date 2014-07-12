@@ -1,0 +1,130 @@
+{% extends 'base.html'%}
+{% load static from staticfiles %}
+{% block titlepage %} {{ title_page }} {% endblock %}
+{% block slidermenu%}
+        <li class="noborder"><a class="gn-icon nopadding gn-icon-googleplus"></a>
+        <li class="noborder"><a class="gn-icon nopadding gn-icon-facebook"></a></li>
+        <li class="noborder"><a class="gn-icon nopadding gn-icon-twitter"></a></li>
+        <li class="noborder"><a class="gn-icon nopadding gn-icon-feed"></a></li>
+        <li><a class="gn-icon nopadding gn-icon-youtube"></a></li> 
+{% endblock %}
+{% block leftcontent %}{% endblock %}
+{% block newscontent %}
+    <!-- Seccion de ultima noticia o noticia destacada del diaa-->
+    <div class="speed-news-bar">
+        <h2>En vivo</h2><h3><a href="">Desarrollo de la nueva pagina</a></h3>
+    </div>
+    <div>
+        <!-- Noticias Principales -->
+        <div class="large-9 columns news-content">
+            <h1>Inicio</h1>
+            <!--Slider de Ultimas Noticias-->
+            <ul class="example-orbit" data-orbit data-options="
+                pause_on_hover:false;
+                timer_speed: 2000;
+                animation_speed:10000;
+                slide_number_text:de;
+                timer_show_progress_bar: false">
+                <li class="active">
+                    <a href=""><img src="images/news/slider/satelite-orbit.jpg" alt="slide 1" /></a>
+                    <div class="orbit-caption"> Caption One.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/andromeda-orbit.jpg" alt="slide 2" /></a>
+                    <div class="orbit-caption"> Caption Two.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/launch-orbit.jpg" alt="slide 3" /></a>
+                    <div class="orbit-caption"> Caption Three.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/satelite-orbit.jpg" alt="slide 4" /></a>
+                    <div class="orbit-caption"> Caption One.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/andromeda-orbit.jpg" alt="slide 5" /></a>
+                    <div class="orbit-caption"> Caption Two.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/launch-orbit.jpg" alt="slide 6" /></a>
+                    <div class="orbit-caption"> Caption Three.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/satelite-orbit.jpg" alt="slide 7" /></a>
+                    <div class="orbit-caption"> Caption One.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/andromeda-orbit.jpg" alt="slide 8" /></a>
+                    <div class="orbit-caption"> Caption Two.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/launch-orbit.jpg" alt="slide 9" /></a>
+                    <div class="orbit-caption"> Caption Three.
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="images/news/slider/satelite-orbit.jpg" alt="slide 10" /></a>
+                    <div class="orbit-caption"> Caption One.
+                    </div>
+                </li>
+            </ul>
+            <!-- Galeria de Noticias -->
+            <section class="news-gallery">
+                {% if news in object_list %}
+                    {% for news in object_list %}
+                        <div class="row">
+                    <article class="large-6 columns">
+                        <figure>
+                            <a href=""><img src=""/></a>
+                            <figcaption>
+                                <h2>Titulo de Noticia</h2>
+                                <p>Rese;a breve <a href="">Leer mas...</a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="large-6 columns">
+                        <figure>
+                            <a href=""><img src=""/></a>
+                            <figcaption>
+                                <h2>Titulo de Noticia</h2>
+                                <p>Rese;a breve <a href="">Leer mas...</a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                    {% endfor %}
+                {% endif %]
+            </section>
+        </div>
+        <!--Otras noticias -->
+        <div class="large-3 columns other-news-content">
+            <div class="today-video">
+                <h2>Video del dia</h2>
+                <div class="flex-video widescreen vimeo"> <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> </div>
+                <h3>Titulo del video</h3>
+            </div>
+            <!--Columnas -->
+            <div class="opinion-column">
+                <h2>Columnistas</h2>
+                <div>
+                    <h3><a href="">Titulo de columna</a> </h3>
+                    <p>Contenido de la columna</p>
+                </div>
+                <div>
+                    <h3><a href="">Titulo de columna</a> </h3>
+                    <p>Contenido de la columna</p>
+                </div>
+            </div>
+            Pruebas
+
+        </div>
+    </div>
+{% endblock %}

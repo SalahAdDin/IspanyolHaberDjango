@@ -127,12 +127,13 @@ STATICFILES_FINDERS = (
 )
 
 #if DEBUG:
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "media")
     #MEDIA_ROOT = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/media'])
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "media")
     #STATIC_ROOT = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static_only'])
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics",  "static_only", )
     #STATICFILES_DIRS = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-2] + ['statics/static'])
 STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), "tiempoTurco", "statics", "static"),)
+
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 

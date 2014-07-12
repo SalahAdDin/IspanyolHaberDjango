@@ -1,6 +1,8 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 
+from news.views import NewsIndexView
+
 from django.contrib import admin
 admin.autodiscover()
 
@@ -33,7 +35,7 @@ urlpatterns = patterns('',
     #url(r'^loginUser/', 'userProfiles.views.loginUser',name='logIn'),
 
     #Pagina principal
-    #url(r'^$', 'signups.views.home', name='home'),
+    url(r'^$', NewsIndexView.as_view(), name='index'),
 )
 
 #if settings.DEBUG: #Django server maneja media solo cuando esta en desarrollo, ideal que en produccion otro server los maneje, no entiendo esto

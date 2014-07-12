@@ -1,6 +1,47 @@
 {% extends 'base.html'%}
 {% load static from staticfiles %}
 {% block titlepage %} {{ news.title }} {% endblock %}
+{% block slidermenu%}
+    <li class="news-slider">
+        <ul class="example-orbit-content" data-orbit data-options="
+            pause_on_hover:false;
+            slide_number_text:de;
+            timer_show_progress_bar: false;
+            bullets: false;
+            slide_number: false">
+            <li data-orbit-slide="headline-1">
+                <div>
+                    <a class="news-title" href="index.html">
+                        <time datetime="2014-04-29 01:38:53">12:01 AM ET</time>
+                        <h2>Subheadline</h2>
+                    </a>
+                    <a class="gn-icon-other nopadding gn-icon-facebook"></a>
+                    <a class="gn-icon-other nopadding gn-icon-twitter"></a>
+                </div>
+            </li>
+            <li data-orbit-slide="headline-2">
+                <div>
+                    <a class="news-title" href="index.html">
+                        <time datetime="2014-04-29 01:38:53">15:01 AM ET</time>
+                        <h2>Subheadline</h2>
+                    </a>
+                    <a class="gn-icon-other nopadding gn-icon-facebook"></a>
+                    <a class="gn-icon-other nopadding gn-icon-twitter"></a>
+                </div>
+            </li>
+            <li data-orbit-slide="headline-3">
+                <div>
+                    <a class="news-title" href="index.html">
+                        <time datetime="2014-04-29 01:38:53">12:30 AM ET</time>
+                        <h2>Subheadline</h2>
+                    </a>
+                    <a class="gn-icon-other nopadding gn-icon-facebook"></a>
+                    <a class="gn-icon-other nopadding gn-icon-twitter"></a>
+                </div>
+            </li>
+        </ul>
+    </li>
+{% endblock %}
 {% block leftcontent %}{% endblock %}
 {% block newscontent %}
     <article class="row articles-news">
@@ -27,10 +68,10 @@
         </header>
         <section class="row">
             <figure>
-                {% if news.newsimages.all %}
+                {% if newsimages.all  %}
                     {% for image in newsimages.all %}
-                        <img src="{{ news.newsimages.image }}" alt="{{ news.newsimages.name }}"/>
-                        <figcaption>{{ news.newsimages.caption }}</figcaption>
+                        <img src="{{ MEDIA_URL }}{{image.image}} " title="{{ image.name }}" alt="{{ image.name }}"/>
+                        <figcaption>{{ image.caption }}</figcaption>
                     {% endfor%}
                 {% endif %}
             </figure>

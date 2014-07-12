@@ -73,15 +73,11 @@
                         </div><!-- /gn-scroller -->
                     </nav>
                 </li>
-                <li><a class="main-title" href="#">{{ title_page }}</a></li>
+                <li><a class="main-title" href="{{ meta_url }}">{{ title_page }}</a></li>
                 <!--Aqui toca cambiar esto dependiendo de la noticia, solo la parte del titutlo queda fija -->
                 <!--Redes Sociales -->
-                <li class="noborder"><a class="gn-icon nopadding gn-icon-googleplus"></a>                    
-                <li class="noborder"><a class="gn-icon nopadding gn-icon-facebook"></a></li>
-                <li class="noborder"><a class="gn-icon nopadding gn-icon-twitter"></a></li>
-                <li class="noborder"><a class="gn-icon nopadding gn-icon-feed"></a></li>
-                <li><a class="gn-icon nopadding gn-icon-youtube"></a></li>                    
-                <li><a href=""><span>{% now "SHORT_DATE_FORMAT" %}</span></a></li>
+                {% block slidermenu%}{% endblock %}
+                <li><a href="">{% now "SHORT_DATE_FORMAT" %}</a></li>
             </ul>
         </header>
         <!--Contenido-->
