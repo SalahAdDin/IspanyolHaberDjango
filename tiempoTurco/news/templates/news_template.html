@@ -80,7 +80,7 @@
             <aside>
                 <h2>Recomendados</h2>
             </aside>
-            {{ news.content|sub:'^.*\n+'|linebreaks }}
+            {{ news.content|sub:'^.*[\n]*'|linebreaks }}
             <p> {% if news.keyword.all %}
                     {% for keyword in news.keyword.all %}
                         <a href="">{{ keyword.name }}   </a>,
