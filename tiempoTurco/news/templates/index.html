@@ -78,30 +78,25 @@
             </ul>
             <!-- Galeria de Noticias -->
             <section class="news-gallery">
-                {% if news in object_list %}
-                    {% for news in object_list %}
+                    {% for new in object_list %}
                         <div class="row">
-                    <article class="large-6 columns">
-                        <figure>
-                            <a href=""><img src=""/></a>
-                            <figcaption>
-                                <h2>Titulo de Noticia</h2>
-                                <p>Rese;a breve <a href="">Leer mas...</a></p>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="large-6 columns">
-                        <figure>
-                            <a href=""><img src=""/></a>
-                            <figcaption>
-                                <h2>Titulo de Noticia</h2>
-                                <p>Rese;a breve <a href="">Leer mas...</a></p>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
+                            <article class="large-6 columns">
+                                <figure>
+                                    <a href=""><img src=""/></a>
+                                    <figcaption>
+                                        <h2>{{ new.title }}</h2>
+                                        <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' year month day slug%}">Leer mas...</a></p>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                        </div>
+                    {% empty %}
+                        <div class="row">
+                            <p>
+                                No hay noticias aún!
+                            </p>
+                        </div>
                     {% endfor %}
-                {% endif %]
             </section>
         </div>
         <!--Otras noticias -->

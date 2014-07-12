@@ -4,6 +4,7 @@ from datetime import datetime
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse,Http404, HttpResponseRedirect
 from django.views.generic import DetailView, ListView, DateDetailView
+from django.utils import timezone
 
 from .models import New
 from images.models import Image
@@ -26,9 +27,7 @@ class NewsDefaultView(DateDetailView):
 #Vista de Pagina Principal
 class NewsIndexView(ListView):
     template_name = 'index.html'
-    queryset = New.objects.all()
-    make_object_list = True
-    allow_future = True
+    model = New
 
 class NewsViewsOther(ListView): #Otras vistas que si necesiten paginacion, apoyarse en el video del Brasileno, ahi esta como hacer paginacion bien hecha
     paginate_by = 10
