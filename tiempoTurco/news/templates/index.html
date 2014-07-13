@@ -84,9 +84,7 @@
                             <article class="large-6 columns">
                                 <figure>
                                     <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
-                                        {% thumbnail {{ newsimages.all|slice:":1" }} geometry as im %}
-                                            <img src="{{ im.url }}">
-                                        {% endthumbnail %}
+
                                     </a>
                                     <figcaption>
                                         <h2>{{ new.title }}</h2>
@@ -94,6 +92,19 @@
                                     </figcaption>
                                 </figure>
                             </article>
+                            {% if forloop.counter|divisibleby:'2' %}
+                                <article class="large-6 columns">
+                                    <figure>
+                                        <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
+
+                                        </a>
+                                        <figcaption>
+                                            <h2>{{ new.title }}</h2>
+                                            <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">Leer mas...</a></p>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            {% endif %}
                         </div>
                     {% empty %}
                         <div class="row">

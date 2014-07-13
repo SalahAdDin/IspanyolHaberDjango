@@ -148,8 +148,8 @@ STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorag
 
 #Backends
 #AUTHENTICATION_BACKENDS = (
-#    'django.contrib.auth.backends.ModelBackend',
 #    'social.backends.google.GoogleOAuth2',
 #    'social.backends.facebook.FacebookOAuth2'
 #    'userProfiles.backends.EmailBackend',
+#    'django.contrib.auth.backends.ModelBackend',
 #)
