@@ -79,40 +79,31 @@
             </ul>
             <!-- Galeria de Noticias -->
             <section class="news-gallery">
-                    {% for new in object_list %}
-                        <div class="row">
-                            <article class="large-6 columns">
-                                <figure>
-                                    <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
+                <div class="row">
+                {% for new in object_list %}
+                    <article class="large-6 columns">
+                        <figure>
+                            <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
 
-                                    </a>
-                                    <figcaption>
-                                      <h2>{{ new.title }}</h2>
-                                      <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">Leer mas...</a></p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            {% if forloop.counter|divisibleby:'2' %}
-                                <article class="large-6 columns">
-                                    <figure>
-                                        <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
-
-                                        </a>
-                                        <figcaption>
-                                            <h2>{{ new.title }}</h2>
-                                            <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">Leer mas...</a></p>
-                                        </figcaption>
-                                    </figure>
-                                </article>
-                            </div>
-                            {% endif %}
-                    {% empty %}
-                        <div class="row">
-                            <p>
-                                No hay noticias aún!
-                            </p>
+                            </a>
+                            <figcaption>
+                              <h2>{{ new.title }}</h2>
+                              <p>{{ new.content|truncatewords:'10' }}<a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">Leer mas...</a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    {% if forloop.counter|divisibleby:'2' %}
                         </div>
-                    {% endfor %}
+                        <div class="row">
+                    {% endif %}
+                {% empty %}
+                    <div class="row">
+                        <p>
+                            No hay noticias aún!
+                        </p>
+                    </div>
+                {% endfor %}
+                </div>
             </section>
         </div>
         <!--Otras noticias -->
