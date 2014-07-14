@@ -84,7 +84,10 @@
                     <article class="large-6 columns">
                         <figure>
                             <a href="{% url 'NewsDefaultView' new.dateTime|date:'Y' new.dateTime|date:'M' new.dateTime|date:'d' new.slug %}">
-
+                                {% thumbnail news.images geometry as im %}
+                                    <img src="{{ im.url }}">
+                                {% endthumbnail %}
+                                {{new.image.name}}
                             </a>
                             <figcaption>
                               <h2>{{ new.title }}</h2>
@@ -97,11 +100,9 @@
                         <div class="row">
                     {% endif %}
                 {% empty %}
-                    <div class="row">
-                        <p>
-                            No hay noticias aún!
-                        </p>
-                    </div>
+                    <p>
+                        No hay noticias aún!
+                    </p>
                 {% endfor %}
                 </div>
             </section>

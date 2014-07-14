@@ -13,26 +13,24 @@ from images.models import Image
 # Create your views here.
 
 #Vista basica para noticias
-class NewsDefaultView(DateDetailView):
-    template_name = 'news_template.html'
-    context_object_name = 'news'
-    date_field = 'dateTime'
-    model = New
+    class NewsDefaultView(DateDetailView):
+        template_name = 'news_template.html'
+        context_object_name = 'news'
+        date_field = 'dateTime'
+        model = New
 
-    def get_context_data(self, **kwargs):
-        context = super(NewsDefaultView, self).get_context_data(**kwargs)
-        context['newsimages'] = Image.objects.filter(news__pk=self.object.id)
-        return context
+        def get_context_data(self, **kwargs):
+            context = super(NewsDefaultView, self).get_context_data(**kwargs)
+            context['newsimages'] = Image.objects.filter(news__pk=self.object.id)
+            return context
 
 #Vista de Pagina Principal
 class NewsIndexView(ListView):
     template_name = 'index.html'
     model = New
 
-    #def get_context_data(self, **kwargs):
-    #    context = super(NewsIndexView, self).get_context_data(**kwargs)
-    #    context['newsimages'] = Image.objects.filter(news__pk=self.object_list.object.id)
-    #    return context
+    def get_queryset(self):
+        return self.model.objects.all()[:10]
 
 class NewsViewsOther(ListView): #Otras vistas que si necesiten paginacion, apoyarse en el video del Brasileno, ahi esta como hacer paginacion bien hecha
     paginate_by = 10
