@@ -13,16 +13,16 @@ from images.models import Image
 # Create your views here.
 
 #Vista basica para noticias
-    class NewsDefaultView(DateDetailView):
-        template_name = 'news_template.html'
-        context_object_name = 'news'
-        date_field = 'dateTime'
-        model = New
+class NewsDefaultView(DateDetailView):
+    template_name = 'news_template.html'
+    context_object_name = 'news'
+    date_field = 'dateTime'
+    model = New
 
-        def get_context_data(self, **kwargs):
-            context = super(NewsDefaultView, self).get_context_data(**kwargs)
-            context['newsimages'] = Image.objects.filter(news__pk=self.object.id)
-            return context
+    def get_context_data(self, **kwargs):
+        context = super(NewsDefaultView, self).get_context_data(**kwargs)
+        context['newsimages'] = Image.objects.filter(news__pk=self.object.id)
+        return context
 
 #Vista de Pagina Principal
 class NewsIndexView(ListView):

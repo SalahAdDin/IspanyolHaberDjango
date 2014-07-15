@@ -46,6 +46,8 @@ class New(models.Model):
     def get_absolute_url(self):
         return reverse ('NewsDefaultView', args = [str(self.dateTime.strftime("%Y")), str(self.dateTime.strftime("%b")), str(self.dateTime.strftime("%d")), str(self.slug)])
 
+    def first_image(self):
+        return self.images.first() # siendo images el related_name en Image
 
 from django.core.cache import cache
 from django.db.models.signals import post_save

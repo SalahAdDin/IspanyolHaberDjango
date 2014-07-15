@@ -15,5 +15,5 @@ class Image(models.Model):
         return self.name
 
     class Meta:
-        ordering=['-name']
+        ordering=['-news__title']
         verbose_name_plural='Imágenes'
