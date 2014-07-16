@@ -22,9 +22,9 @@ SECRET_KEY = 'o5+(*-5bus0e%28%j#%2-5*u3$dj508d01l*&z!1cjt%ca6=y@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False #Cuando pase a produccion hay que ponerlo como FALSE
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost',]
+ALLOWED_HOSTS = ['*']
 
 #TCP definition
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
@@ -46,7 +46,6 @@ INSTALLED_APPS = (
     'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
-    #'django.contrib.comments', Despreciado en proximas versiones
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -66,7 +65,6 @@ INSTALLED_APPS = (
     'userProfiles',
     'videos',
     'rest_framework',
-    #'gunicorn',
     'sorl.thumbnail',
 )
 
@@ -146,6 +144,8 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+
 #Backends
 #AUTHENTICATION_BACKENDS = (
 #    'social.backends.google.GoogleOAuth2',
@@ -153,3 +153,36 @@ STATICFILES_STORAGE ='django.contrib.staticfiles.storage.CachedStaticFilesStorag
 #    'userProfiles.backends.EmailBackend',
 #    'django.contrib.auth.backends.ModelBackend',
 #)
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler'
+        },
+        'logfile': {
+            'class': 'logging.handlers.WatchedFileHandler',
+            'filename': 'error.log'
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'django': {
+            'handlers': ['logfile'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    }
+}

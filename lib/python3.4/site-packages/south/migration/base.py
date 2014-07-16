@@ -138,7 +138,15 @@ class Migrations(with_metaclass(MigrationsMetaclass, list)):
             if app_label in settings.SOUTH_MIGRATION_MODULES:
                 # There's an override.
                 return settings.SOUTH_MIGRATION_MODULES[app_label]
-        return self._application.__name__ + '.migrations'
+        # We see if the south_migrations module exists first, and
+        # use that if we find it.
+        module_name = self._application.__name__ + '.south_migrations'
+        try:
+            importlib.import_module(module_name)
+        except ImportError:
+            return self._application.__name__ + '.migrations'
+        else:
+            return module_name
 
     def get_application(self):
         return self._application

@@ -1,0 +1,297 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7fe4cdb8b5f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7fe4cdb8b5f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7fe4cdb8b5f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/template/base.py", line 854, in render_node
+    return node.render(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 12, in url
+    return staticfiles_storage.url(path)
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 139, in url
+    hashed_name = self.hashed_name(clean_name).replace('\\', '/')
+  File "/home/tulipan/Proyectos/IspanyolHaber/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 96, in hashed_name
+    (clean_name, self))
+ValueError: The file 'favicon.ico' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x7f43a80c65f8>.

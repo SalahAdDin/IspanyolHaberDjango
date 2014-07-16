@@ -52,12 +52,6 @@ from mysql.connector.django.creation import DatabaseCreation
 from mysql.connector.django.introspection import DatabaseIntrospection
 from mysql.connector.django.validation import DatabaseValidation
 
-# Raise exceptions for database warnings if DEBUG is on
-# Note: PEP-249 says Warning must be subclass of StandardError
-mysql.connector.Warning = Warning
-if settings.DEBUG:
-    warnings.filterwarnings("error", category=mysql.connector.Warning)
-
 DatabaseError = mysql.connector.DatabaseError
 IntegrityError = mysql.connector.IntegrityError
 NotSupportedError = mysql.connector.NotSupportedError
@@ -487,7 +481,6 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         kwargs = {
             'charset': 'utf8',
             'use_unicode': True,
-            'sql_mode': 'TRADITIONAL',
             'buffered': True,
         }
 
@@ -506,11 +499,18 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         if settings_dict['PORT']:
             kwargs['port'] = int(settings_dict['PORT'])
 
+        # Raise exceptions for database warnings if DEBUG is on
+        kwargs['raise_on_warnings'] = settings.DEBUG
+
         kwargs['client_flags'] = [
             # Need potentially affected rows on UPDATE
             mysql.connector.constants.ClientFlag.FOUND_ROWS,
         ]
-        kwargs.update(settings_dict['OPTIONS'])
+        try:
+            kwargs.update(settings_dict['OPTIONS'])
+        except KeyError:
+            # OPTIONS missing is OK
+            pass
 
         return kwargs
 
@@ -528,7 +528,8 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         if self.server_version < (5, 5, 3):
             # See sysvar_sql_auto_is_null in MySQL Reference manual
             self.connection.cmd_query("SET SQL_AUTO_IS_NULL = 0")
-        if self.settings_dict['AUTOCOMMIT']:
+
+        if 'AUTOCOMMIT' in self.settings_dict:
             self.set_autocommit(self.settings_dict['AUTOCOMMIT'])
 
     def create_cursor(self):

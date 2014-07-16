@@ -62,7 +62,7 @@ class DatabaseIntrospection(BaseDatabaseIntrospection):
         cursor.execute(
             "SELECT column_name, numeric_precision, numeric_scale FROM "
             "INFORMATION_SCHEMA.COLUMNS WHERE table_name = %s AND "
-            "table_schema = DATABASE() AND data_type='decimal", [table_name])
+            "table_schema = DATABASE() AND data_type='decimal'", [table_name])
         numeric_map = dict([(line[0], tuple([int(n) for n in line[1:]]))
             for line in cursor.fetchall()])
 
@@ -143,7 +143,7 @@ class DatabaseIntrospection(BaseDatabaseIntrospection):
         Returns the name of the primary key column for the given table
         """
         # Django 1.6
-        for column in self.get_indexes(cursor, table_name).iteritems():
+        for column in self.get_indexes(cursor, table_name).items():
             if column[1]['primary_key']:
                 return column[0]
         return None

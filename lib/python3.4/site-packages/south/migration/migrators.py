@@ -31,7 +31,7 @@ class Migrator(object):
     def print_title(self, target):
         if self.verbosity:
             print(self.title(target))
-        
+
     @staticmethod
     def status(target):
         raise NotImplementedError()
@@ -99,7 +99,7 @@ class Migrator(object):
             except:
                 print("Error during commit in migration: %s" % migration)
                 raise
-                
+
 
     def run(self, migration, database):
         # Get the correct ORM.
@@ -161,7 +161,8 @@ class DryRunMigrator(MigratorWrapper):
             if self.verbosity:
                 print(" - Migration '%s' is marked for no-dry-run." % migration)
             return
-        south.db.db.dry_run = True
+        for name, db in south.db.dbs.iteritems():
+            south.db.dbs[name].dry_run = True
         # preserve the constraint cache as it can be mutated by the dry run
         constraint_cache = deepcopy(south.db.db._constraint_cache)
         if self._ignore_fail:
@@ -180,7 +181,8 @@ class DryRunMigrator(MigratorWrapper):
             if self._ignore_fail:
                 south.db.db.debug = old_debug
             south.db.db.clear_run_data(pending_creates)
-            south.db.db.dry_run = False
+            for name, db in south.db.dbs.iteritems():
+                south.db.dbs[name].dry_run = False
             # restore the preserved constraint cache from before dry run was
             # executed
             south.db.db._constraint_cache = constraint_cache

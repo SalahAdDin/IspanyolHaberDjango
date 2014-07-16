@@ -26,10 +26,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="737" selection-end="737" vertical-scroll-proportion="0.42932862" vertical-offset="87" max-vertical-offset="2400">
+            <state line="187" column="1" selection-start="5315" selection-end="5315" vertical-scroll-proportion="0.0" vertical-offset="1772" max-vertical-offset="2895">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="storage.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="246" column="33" selection-start="9806" selection-end="9806" vertical-scroll-proportion="0.029354207" vertical-offset="3675" max-vertical-offset="4785">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foundation.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/foundation.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7791" column="1" selection-start="218808" selection-end="218808" vertical-scroll-proportion="0.0" vertical-offset="116417" max-vertical-offset="116970">
+              <folding>
+                <element signature="e#95268#95594#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="4" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -56,7 +98,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="8879" selection-end="8879" vertical-scroll-proportion="-8.583333" vertical-offset="1354" max-vertical-offset="2205">
+            <state line="5" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2175">
               <folding />
             </state>
           </provider>
@@ -65,25 +107,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="77" selection-start="4085" selection-end="4085" vertical-scroll-proportion="-6.0" vertical-offset="1146" max-vertical-offset="2100">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_template.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/news_template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="24" selection-start="3263" selection-end="3355" vertical-scroll-proportion="-8.041667" vertical-offset="902" max-vertical-offset="1695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/images/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="26" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="86" column="77" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
@@ -92,33 +116,10 @@
       <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tiempoTurco/images/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="119" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="12" column="119" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315">
               <folding>
                 <marker date="1405374491617" expanded="true" signature="166:546" placeholder="..." />
                 <marker date="1405374491617" expanded="true" signature="392:512" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="26" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="870">
-              <folding>
-                <marker date="1405371213725" expanded="true" signature="317:2110" placeholder="..." />
-                <marker date="1405371213725" expanded="true" signature="2034:2110" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templatetags/news.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="14" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/__init__.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/videos/admin.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/gallery/admin.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/author/admin.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/author/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/comments/admin.py" />
@@ -172,7 +170,6 @@
         <option value="$PROJECT_DIR$/tiempoTurco/authors/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/urls.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/forms.py" />
-        <option value="$PROJECT_DIR$/tiempoTurco/statics/templates/base.html" />
         <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py" />
         <option value="$PROJECT_DIR$/../IspanyolHaberHTML/index.html" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/templatetags/__init__.py" />
@@ -184,7 +181,11 @@
         <option value="$PROJECT_DIR$/tiempoTurco/news/views.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/images/admin.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/news/templates/index.html" />
+        <option value="$PROJECT_DIR$/tiempoTurco/statics/templates/base.html" />
+        <option value="$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/scss/app.scss" />
         <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/foundation.css" />
+        <option value="$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py" />
       </list>
     </option>
   </component>
@@ -220,6 +221,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,29 +254,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statics" />
+              <option name="myItemId" value="python3.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,33 +272,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="statics" />
+              <option name="myItemId" value="python3.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static_only" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
+              <option name="myItemId" value="site-packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,15 +294,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
+              <option name="myItemId" value="python3.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,11 +320,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="python3.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python3.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="staticfiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,7 +386,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,6 +398,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -627,7 +643,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20632412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20948617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -690,31 +706,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/keyWords/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python3.4/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="427" column="8" selection-start="19070" selection-end="19070" vertical-scroll-proportion="0.33242506" vertical-offset="5893" max-vertical-offset="15330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/videos/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/publisher/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/authors/templates/author.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="128" selection-end="335" vertical-scroll-proportion="-2.7083333" vertical-offset="55" max-vertical-offset="405" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/userProfiles/templates/loginUser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="42" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="315" />
@@ -865,16 +856,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="4" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="765" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="130" selection-start="719" selection-end="852" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
+        <state line="20" column="130" selection-start="719" selection-end="852" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templatetags/__init__.py">
@@ -884,63 +868,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="11" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../IspanyolHaberHTML/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="73" selection-start="13994" selection-end="13994" vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="4725">
-          <folding />
-        </state>
+        <state line="222" column="73" selection-start="13994" selection-end="13994" vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="4725" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="31" column="4" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/images/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="17" column="26" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/news_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="24" selection-start="3263" selection-end="3355" vertical-scroll-proportion="-8.041667" vertical-offset="902" max-vertical-offset="1695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="8879" selection-end="8879" vertical-scroll-proportion="-8.583333" vertical-offset="1354" max-vertical-offset="2205">
-          <folding />
-        </state>
+        <state line="73" column="24" selection-start="3263" selection-end="3355" vertical-scroll-proportion="-8.041667" vertical-offset="902" max-vertical-offset="1695" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templatetags/news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="14" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="870">
-          <folding>
-            <marker date="1405371213725" expanded="true" signature="317:2110" placeholder="..." />
-            <marker date="1405371213725" expanded="true" signature="2034:2110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="49" column="26" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/images/admin.py">
@@ -950,13 +908,6 @@
             <marker date="1405374491617" expanded="true" signature="166:546" placeholder="..." />
             <marker date="1405374491617" expanded="true" signature="392:512" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="77" selection-start="4085" selection-end="4085" vertical-scroll-proportion="-6.0" vertical-offset="1146" max-vertical-offset="2100">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,10 +925,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="13" selection-start="3304" selection-end="3306" vertical-scroll-proportion="0.332696" vertical-offset="2121" max-vertical-offset="135615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="77" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/foundation.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
+          <folding>
+            <element signature="e#88248#88574#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566">
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7791" column="1" selection-start="218808" selection-end="218808" vertical-scroll-proportion="0.0" vertical-offset="116417" max-vertical-offset="116970">
+          <folding>
+            <element signature="e#95268#95594#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="737" selection-end="737" vertical-scroll-proportion="0.42932862" vertical-offset="87" max-vertical-offset="2400">
+        <state line="187" column="1" selection-start="5315" selection-end="5315" vertical-scroll-proportion="0.0" vertical-offset="1772" max-vertical-offset="2895">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="246" column="33" selection-start="9806" selection-end="9806" vertical-scroll-proportion="0.029354207" vertical-offset="3675" max-vertical-offset="4785">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

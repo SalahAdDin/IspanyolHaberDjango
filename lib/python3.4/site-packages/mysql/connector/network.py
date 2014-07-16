@@ -1,5 +1,5 @@
 # MySQL Connector/Python - MySQL driver written in Python.
-# Copyright (c) 2012, 2013, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2012, 2014, Oracle and/or its affiliates. All rights reserved.
 
 # MySQL Connector/Python is licensed under the terms of the GPLv2
 # <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>, like most
@@ -305,6 +305,9 @@ class BaseMySQLSocket(object):
         except (ssl.SSLError, IOError) as err:
             raise errors.InterfaceError(
                 errno=2055, values=(self.get_address(), _strioerror(err)))
+        except NotImplementedError as err:
+            raise errors.InterfaceError(str(err))
+
 # pylint: enable=C0103
 
 
