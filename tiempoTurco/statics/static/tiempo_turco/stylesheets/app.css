@@ -7833,7 +7833,7 @@ h3 {
 
 /* line 74, sicons/*.png */
 .sicons-sprite, .sicons-Facebook, .sicons-Google, .sicons-Rss, .sicons-Twitter, .sicons-Youtube {
-  background: url('/images/sicons-sc312c6f8d0.png') no-repeat;
+  background: url('../images/sicons-sc312c6f8d0.png') no-repeat;
 }
 
 /* line 60, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -8808,7 +8808,7 @@ main {
   border-bottom: 1px solid #c6d0da;
 }
 
-/* Estilos de Slider de Noticias en Páginas de noticias */
+/* Estilos de Slider de Noticias en Paginas de noticias */
 /* line 796, ../scss/app.scss */
 .news-slider {
   background: #1A1A1A;

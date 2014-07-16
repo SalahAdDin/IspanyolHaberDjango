@@ -35,13 +35,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storage.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="storage.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="246" column="33" selection-start="9806" selection-end="9806" vertical-scroll-proportion="0.029354207" vertical-offset="3675" max-vertical-offset="4785">
+            <state line="253" column="32" selection-start="9964" selection-end="9964" vertical-scroll-proportion="-9.5" vertical-offset="3510" max-vertical-offset="4920">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8810" column="14" selection-start="240613" selection-end="240624" vertical-scroll-proportion="0.33333334" vertical-offset="131984" max-vertical-offset="135615">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,18 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiempoTurco/images/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="119" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315">
-              <folding>
-                <marker date="1405374491617" expanded="true" signature="166:546" placeholder="..." />
-                <marker date="1405374491617" expanded="true" signature="392:512" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -135,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tiempoTurco/author/admin.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/author/models.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/comments/admin.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/keyWords/admin.py" />
@@ -186,6 +182,7 @@
         <option value="$PROJECT_DIR$/tiempoTurco/tiempoTurco/settings.py" />
         <option value="$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/foundation.css" />
         <option value="$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py" />
+        <option value="$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/app.css" />
       </list>
     </option>
   </component>
@@ -254,6 +251,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiempo_turco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiempoTurco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiempo_turco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IspanyolHaber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -337,40 +408,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="contrib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IspanyolHaber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python3.4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contrib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staticfiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -905,8 +942,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="119" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <folding>
-            <marker date="1405374491617" expanded="true" signature="166:546" placeholder="..." />
-            <marker date="1405374491617" expanded="true" signature="392:512" placeholder="..." />
+            <marker date="1405374491617" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405374491617" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -930,11 +967,6 @@
         <state line="37" column="4" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="765">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="13" selection-start="3304" selection-end="3306" vertical-scroll-proportion="0.332696" vertical-offset="2121" max-vertical-offset="135615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tiempoTurco/news/templates/index.html">
@@ -987,10 +1019,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="33" selection-start="9806" selection-end="9806" vertical-scroll-proportion="0.029354207" vertical-offset="3675" max-vertical-offset="4785">
+        <state line="253" column="32" selection-start="9964" selection-end="9964" vertical-scroll-proportion="-9.5" vertical-offset="3510" max-vertical-offset="4920">
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiempoTurco/statics/static/tiempo_turco/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8810" column="14" selection-start="240613" selection-end="240624" vertical-scroll-proportion="0.33333334" vertical-offset="131984" max-vertical-offset="135615">
+          <folding />
         </state>
       </provider>
     </entry>
